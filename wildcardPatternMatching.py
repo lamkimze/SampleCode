@@ -1,8 +1,4 @@
 import sys
-"""
-Name: Kim Ze Lam
-Student ID: 31860346
-"""
 def Boyer_Moore(text, pat):
     result = []
     bc_table = bad_char_table(pat)
@@ -256,6 +252,6 @@ if __name__ == '__main__':
     pat = openfile(filename2)
     print("\nContent of pattern : ", pat)
 
-    outFile = open("q2_result.txt", 'w')
+    outFile = open("resultMatching.txt", 'w')
     writefile(Boyer_Moore(text, pat), outFile)
     outFile.close()
